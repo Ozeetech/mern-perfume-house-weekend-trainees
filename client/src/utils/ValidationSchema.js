@@ -19,7 +19,7 @@ export const signUpSchema = yup
       .oneOf([yup.ref("password")], "password do not match"),
   })
   .required();
-export const signInSchema = yup
+export const logInSchema = yup
   .object({
     email: yup
       .string()
