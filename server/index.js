@@ -6,9 +6,9 @@ import authRoute from "./routes/authRoute.js";
 import orderRoute from "./routes/orderRoute.js"
 import cors from "cors"
 
+dotenv.config()
 const app = express();
 const port = process.env.PORT || 3000;
-dotenv.config()
 app.use(cors());
 app.use(express.json())
 app.use("/api/product" ,productRoute);
